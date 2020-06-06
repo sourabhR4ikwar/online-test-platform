@@ -14,13 +14,11 @@ A simple and easy platform for teachers to build and conduct tests online.
 * * auth Apis
 * * Test Api's
 * * Result Api's
-* Create frontend ( working prototype )
-* * Create the whole application with simple
-* * * Buttons
-* * * Inputfields
-* * * Text
+* Create frontend ( working prototype with just Button inputfields and Texts )
+* * ~~Add Material UI~~
+* * ~~setup router~~
+* * Implement Frontend Logic for Login
 * Create and Stylize frontend
-* * Integrate Material UI.
 * * Auth Pages
 * * Teachers dashboard
 * * Result Teacher
