@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Link from 'react-router-dom/Link';
+
 
 // Material
 import AppBar from '@material-ui/core/AppBar';
@@ -10,9 +12,15 @@ export class Navbar extends Component {
         return (
           <AppBar position="fixed">
             <Toolbar>
-              <Button color="inherit">Home</Button>
-              <Button color="inherit">Login</Button>
-              <Button color="inherit">Signup</Button>
+              <Button color="inherit" component={Link} to="/">
+                Home
+              </Button>
+              <Button color="inherit" component={Link} to="/login">
+                Login
+              </Button>
+              <Button color="inherit" component={Link} to="/signup">
+                Signup
+              </Button>
             </Toolbar>
           </AppBar>
         );
