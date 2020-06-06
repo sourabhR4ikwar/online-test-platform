@@ -4,13 +4,14 @@ A simple and easy platform for teachers to build and conduct tests online.
 
 
 ## Todo
-* Make a new gmail
-* Setup a firebase project.
+* ~~Make a new gmail~~
+* ~~Setup a firebase project.~~
 * Create a base cloud firestore. ( Modify later )
 * * Figure out the schema
 * * Create database on firestore
 * * Add sample data to work with
 * Create cloud functions api's ( Modify later )
+* * basic setup
 * * auth Apis
 * * Test Api's
 * * Result Api's
