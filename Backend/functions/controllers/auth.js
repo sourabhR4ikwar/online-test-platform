@@ -6,7 +6,29 @@ const config = require('../config');
 firebase.initializeApp(config);
 
 exports.login = (req, res) => {
-    
+    const user = {
+      email: "sourabh.raikwar@gmail.com",
+      password: "test123",
+    };
+    let errors = {};
+
+    // TODO Validation
+
+    // FirebaseAuthentication
+    firebase.auth().signInWithEmailAndPassword(user.email, user.password)
+        .then(data => {
+            return data.user.getIdToken();
+        })
+        .then(token => {
+            return res.json({token});
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json({
+                message: 'Internal Server Error!',
+                error: err
+            })
+        })
 };
 
 exports.signup = (req, res) => {
