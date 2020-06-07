@@ -19,7 +19,7 @@ A simple and easy platform for teachers to build and conduct tests online.
 * * ~~Add Material UI~~
 * * ~~setup router~~
 * * Implement Frontend Logic for Login
-* * Signup
+* * ~~signup~~
 * * Teacher dashboard
 * * Test Platform
 * Create and Stylize frontend
