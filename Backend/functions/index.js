@@ -9,6 +9,11 @@ const authRoutes = require('./routes/auth');
 
 // setup routes
 app.use('/auth', authRoutes);
+app.get('/test', (req, res) => {
+    res.status(200).json({
+        message: "It Works."
+    })
+})
 
 
 exports.api = functions.https.onRequest(app);
