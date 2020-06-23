@@ -51,3 +51,17 @@ exports.signup = (req, res) => {
             res.status(500).json(error);
         })
 };
+
+exports.fetchTests = (req, res) => {
+    db.collection('tests').doc('8cnFIWTib2RHlt7LNMfD').get().then(docRef => {
+        docRef.collection('sections').get().then(docs => {
+            let docs = [];
+            docs.map(doc => {
+                docs.push(doc.data());
+            });
+        });
+        res.json({
+            message: docs
+        });
+    });
+};
